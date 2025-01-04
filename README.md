@@ -1,22 +1,27 @@
 # 🌱 Plant Disease Detection Using AI
 
 # 1. Project Overview
+   
 This project implements a Plant Disease Detection System using a trained Convolutional Neural Network (CNN) model to predict the disease present in a plant leaf based on an uploaded image. The web application built using Streamlit allows users to upload an image of a plant leaf, and the system predicts both the crop type and the disease affecting the plant.
+
 ---
 # 2. Technologies Used
+
 Streamlit: A Python library to build interactive web applications for data science and machine learning projects.
 Keras: High-level neural networks API used to build and train deep learning models.
 TensorFlow: Open-source machine learning library used for training and deploying the model.
 Pickle: Python library to serialize the machine learning model into a file for easy loading and inference.
 Pillow (PIL): Python Imaging Library used for image processing tasks.
 NumPy: Library for numerical operations, particularly for image data manipulation.
+
 ---
-#3. Features
+# 3. Features
 Image Upload: Users can upload plant leaf images in JPG, PNG, or JPEG formats.
 AI-Based Prediction: The model predicts the disease and the crop based on the uploaded leaf image.
 Instant Feedback: The app provides instant feedback with a progress bar while classifying the uploaded image.
 User-Friendly Interface: Built with Streamlit, providing an easy-to-use and interactive interface for plant disease detection.
 Disease Information: Displays detailed information about the predicted disease and the affected crop.
+
 ---
 # 4. Getting Started
 # 4.1 Clone the Repository
