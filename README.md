@@ -51,6 +51,7 @@ To run the application, execute the following command in the project directory:
 Copy code
 streamlit run app.py
 This will launch the application in your default web browser. You will be able to upload plant leaf images and receive predictions about the crop and disease.
+
 ---
 # 5. Application Workflow
 # 5.1 Uploading an Image
@@ -63,22 +64,11 @@ The result is displayed on the interface, including the crop name and disease na
 # 5.3 Progress Bar and Result Display
 While the image is being processed, a progress bar is shown to the user to indicate the classification process.
 After classification, the predicted crop and disease names are displayed, along with detailed information.
----
-# 6. Project Structure
-The project directory is structured as follows:
 
-Copy code
-plant-disease-detection/
-│
-├── app.py                       # Main Streamlit application file.
-├── requirements.txt             # List of Python dependencies required for the project.
-├── Model/                       # Directory containing the pre-trained model.
-│   └── plant_disease_model.pkl  # Pre-trained model file.
-├── temp/                        # Temporary folder to store uploaded images.
-├── README.md                    # Project documentation (this file).
-└── LICENSE                      # License information (MIT or other).
 ---
-# 7. Model Details
+
+
+# 6. Model Details
 The plant_disease_model.pkl is a Convolutional Neural Network (CNN) that has been trained to detect diseases in various plant crops based on leaf images. The model was trained on a publicly available plant disease dataset and can recognize diseases in a variety of crops such as tomatoes, potatoes, apples, and others.
 
 Key model details:
@@ -86,15 +76,16 @@ Key model details:
 Input Size: 224x224 pixels (resized from the original image).
 Model Architecture: Convolutional Neural Network (CNN).
 Framework Used: Keras with TensorFlow backend.
-# 7.1 Training the Model
+# 6.1 Training the Model
 To train the model, you can use a plant disease dataset such as the PlantVillage Dataset. The model can be trained using the following steps:
 
 Preprocess the images (resize, normalize, etc.).
 Use a CNN architecture to extract features.
 Train the model using labeled data (disease labels).
 Save the trained model using pickle for later use.
+
 ---
-# 8. Contributing
+# 7. Contributing
 Contributions to improve the model, UI, or codebase are welcome! Here’s how you can contribute:
 
 Fork the repository.
